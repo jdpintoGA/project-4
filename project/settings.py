@@ -46,8 +46,7 @@ INSTALLED_APPS = [
     'jwt_auth',
     'frontend',
     'appointments',
-    'mail',
-    'uploadapp'
+    'mail'
 ]
 
 AUTH_USER_MODEL = 'jwt_auth.User'
@@ -134,11 +133,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-
-# Handle images
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
 
 # Email settings set-up
 EMAIL_HOST = 'mail.btinternet.com'

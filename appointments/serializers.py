@@ -4,15 +4,15 @@ from django.contrib.auth import get_user_model
 User = get_user_model()
 
 
-
 class AppointmentSerializer(serializers.ModelSerializer):
-    
+
     class Meta:
         model = Appointment
         fields = ('id', 'appointment_date', 'services', 'user')
         extra_kwargs = {
-          'services': { 'required': False}
+            'services': {'required': False}
         }
+
 
 class CategorySerializer(serializers.ModelSerializer):
 
@@ -45,12 +45,13 @@ class PopulateCategorySerializer(serializers.ModelSerializer):
         model = Category
         fields = ('id', 'category', 'services')
 
+
 class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
         fields = ('id', 'username', 'first_name', 'last_name',
-                  'email', 'image', 'age', 'phone_number', 'user_type')
+                  'email', 'age', 'phone_number', 'user_type')
 
 
 class PopulateAppointmentSerializer(serializers.ModelSerializer):
@@ -60,4 +61,3 @@ class PopulateAppointmentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Appointment
         fields = ('id', 'appointment_date', 'user', 'services')
-
