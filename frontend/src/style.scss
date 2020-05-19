@@ -236,7 +236,7 @@ div.hero-body {
 .footer {
   position: relative;
   padding: 1rem 1.5rem 2rem;
-  background: linear-gradient(rgb(190, 190, 190), rgb(131, 131, 131), black);
+  background-color: black;
   .textFooter {
     h2 {
       font-size: 25px;
@@ -248,12 +248,11 @@ div.hero-body {
     display: flex;
     justify-content: center;
     font-size: 15px;
-    color: black;
+    color: white;
     .footerGroup1 {
       margin-left: 1.2rem;
       margin-right: 1.2rem;
-      font-size: xx-large;
-
+      font-size: larger;
       a {
         font-size: 33px;
         text-decoration: none;
@@ -270,8 +269,7 @@ div.hero-body {
     .footerGroup2 {
       margin-left: 1.2rem;
       margin-right: 1.2rem;
-      font-size: xx-large;
-
+      font-size: larger;
       a {
         font-size: 33px;
         text-decoration: none;
@@ -288,7 +286,7 @@ div.hero-body {
     .footerGroup3 {
       margin-left: 1.2rem;
       margin-right: 1.2rem;
-      font-size: xx-large;
+      font-size: larger;
       a {
         font-size: 33px;
         text-decoration: none;
@@ -305,8 +303,7 @@ div.hero-body {
     .footerGroup4 {
       margin-left: 1.2rem;
       margin-right: 1.2rem;
-      font-size: xx-large;
-
+      font-size: larger;
       a {
         font-size: 33px;
         text-decoration: none;
@@ -325,8 +322,8 @@ div.hero-body {
 .navbar-burger span {
   left: calc(98% - 8px);
 }
-
 //========================================== BOOKING ==========================================================
+
 .bookingPay {
   background: linear-gradient(white, rgb(221, 221, 221), rgb(190, 190, 190));
   .calendarBook {

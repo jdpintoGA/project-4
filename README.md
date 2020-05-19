@@ -10,7 +10,7 @@ Laboratory Appointment Booking System (L.A.B.S), was the fourth project undertak
 
 The origin story of the project was to build an MVP demo of booking platform for an existing business, which would provide them with a working demo that they could take and build on to create a fully-fledged product.
 
-The project was an opportunity for the team to cement our learnings over from the course as a whole with regards React and also to add the new technology of Django for the back end of the application.
+The project was an opportunity for the team to cement our learnings over from the course as a whole with regards to React and also to add the new technology of Django for the back end of the application.
  
 The finished product can be found on Heroku [here](https://labs-project4.herokuapp.com/#/).
 
@@ -18,11 +18,11 @@ The finished product can be found on Heroku [here](https://labs-project4.herokua
 
 ## The Brief 
 
-- **Build a full-stack application by making your own backend and your own front-end**
-- **Use a Python Django API using Django REST Framework to serve your data from a Postgres database**
-- **Consume your API with a separate front-end built with React**  
+- **Build a full-stack application by making the backend and the front-end**
+- **Use a Python Django API using Django REST Framework to serve data from a Postgres database**
+- **Consume the API with a separate front-end built with React**  
 - **Be a complete product which most likely means multiple relationships and CRUD functionality for at least a couple of models** 
-- **Implement thoughtful user stories/wireframes** that are significant enough to help you know which features are core MVP and which you can cut** 
+- **Implement thoughtful user stories/wireframes that are significant enough to help you know which features are core MVP and which you can cut** 
 - **Have a visually impressive design to kick your portfolio up a notch and have something to wow future clients & employers. ALLOW time for this**
 
 ---
@@ -50,7 +50,7 @@ The finished product can be found on Heroku [here](https://labs-project4.herokua
 
 The starting point for the project was to define the data models for the back end.
 
-The graphic below, outlines the four models we settled on and the relationships between the models.
+The graphic below outlines the four models we settled on and the relationships between the models.
  
 <img  src=frontend/Images/relationships.png height=500> 
  
@@ -58,13 +58,13 @@ The `categories`, `services` and `appointment` models can be found in the appoin
 
  **The Relationships**
 
- User id -----> Appointments User
+ User ID -----> Appointments User
     (one to many)
 
-Appointments services ------> Services id
+Appointments services ------> Services ID
                   (many to many)
 
- Categories id  -----> Services category
+ Categories ID  -----> Services category
                (one to many)
 
 As the data for our project was provided for us on a spreadsheet, by the healthcare provider, we didn’t need to use an external API, but instead created our own fixture.json file using the data provided on the original spreadsheet and used this information to populate our services model, which was in turn stored in a PostgreSQL database.
@@ -377,7 +377,7 @@ An example of the profile page, showing the appointments for a particular user.
 
 ## Potential Future Features
 
-* Although created in the data model, we never got around to actually implementing a user type in the final application. The original idea was that depending on the type of user, they would be shown different information. i.e. different prices.
+* Although created in the data model, we never got around to actually implementing a user type in the final application. The original idea was that depending on the type of user, they would be shown different information, i.e. different prices.
 * A second feature that I would also have liked to implement was an email appointment confirmation. The idea would have been to send an email to a user, using Django’s mail capabilities once a user a completed the booking process. 
 
 ## Lessons Learned

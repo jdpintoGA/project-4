@@ -1,11 +1,7 @@
 import React from 'react'
-
 export default function Footer() {
   return (
     <footer className="footer">
-      <div className="has-text-centered textFooter">
-        <h2> Team L.A.B.S </h2>
-      </div>
       <div className="has-text-centered flexFoot">
         <div className="footerGroup1">
           <div>João</div>
