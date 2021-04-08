@@ -11,7 +11,7 @@ djangorestframework = "*"
 psycopg2-binary = "*"
 pyjwt = "*"
 django-heroku = "*"
-django = "==2.2.12"
+django = "==2.2.20"
 
 [requires]
 python_version = "3.7"
